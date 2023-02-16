@@ -47,7 +47,6 @@ const App = (): JSX.Element => {
         {arr.map((c) => (
           <div key={c.id} className={styles.cardItem}>
             <p>{c.title}</p>
-
             <div className={styles.delBtn}>
               <button onClick={() => deleteItem(c.id)}>Del</button>
             </div>
