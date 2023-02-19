@@ -9,7 +9,6 @@ const App = (): JSX.Element => {
   const changeHandler = (evt: ChangeEvent<HTMLInputElement>): void => {
     setTitle(evt.target.value);
   };
-
   const handleSubmit = (): void => {
     if (!title?.length) return;
     const newData = {
