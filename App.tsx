@@ -20,11 +20,9 @@ const App = (): JSX.Element => {
     setArr([...arr, newData]);
     setTitle('');
   };
-
   const deleteItem = (id: number): void => {
     const newData = arr.filter((c) => c.id != id);
     setArr(newData);
-    // setArr(arr.filter(item => item.id!== id));
   };
 
   return (
