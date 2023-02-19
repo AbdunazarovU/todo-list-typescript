@@ -6,7 +6,6 @@ import { data } from './constants';
 const App = (): JSX.Element => {
   const [title, setTitle] = useState<string>('');
   const [arr, setArr] = useState<IData[]>(data);
-
   const changeHandler = (evt: ChangeEvent<HTMLInputElement>): void => {
     setTitle(evt.target.value);
   };
